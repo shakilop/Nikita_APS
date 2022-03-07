@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_1.srcs/sources_1/new" \
+"../../../../project_1.srcs/sources_1/new/miriscv.v" \
+"../../../../project_1.srcs/sources_1/new/miriscv_alu.v" \
+"../../../../project_1.srcs/sources_1/new/miriscv_data_memory.v" \
+"../../../../project_1.srcs/sources_1/new/miriscv_decode.v" \
+"../../../../project_1.srcs/sources_1/new/miriscv_instruction_memory.v" \
+"../../../../project_1.srcs/sources_1/new/miriscv_register_file.v" \
+"../../../../project_1.srcs/sim_1/new/tb_miriscv.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
